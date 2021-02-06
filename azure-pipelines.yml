@@ -1,0 +1,25 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  name: 'azure-vmss'
+  # vmImage: 'ubuntu-latest'
+
+jobs:  
+- job: Job1
+  steps:
+  - script: echo Hello, $HOSTNAME
+- job: Job1
+  steps:
+  - script: echo Hello, $HOSTNAME
+- job: Job1
+  steps:
+  - script: echo Hello, $HOSTNAME
+- job: Job1
+  steps:
+  - script: echo Hello, $HOSTNAME
